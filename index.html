@@ -481,15 +481,15 @@ function render(){
     beforeDraw(chart){
       const {ctx, chartArea, scales} = chart;
       if(!chartArea) return;
-      const xZones = [[0,40],[40,70],[70,100]];
+      const xZones = [[30,55],[55,75],[75,100]];
       const xLevel = [0,1,2];
-      const yZones = [[0,40],[40,80],[80,matrixYMax]];
+      const yZones = [[50,65],[65,100],[100,matrixYMax]];
       const yLevel = [0,1,2];
       const colors = isLight
         ? ['rgba(231,76,60,0.14)','rgba(243,156,18,0.16)','rgba(0,184,148,0.14)']
         : ['rgba(231,76,60,0.20)','rgba(243,156,18,0.18)','rgba(0,230,184,0.14)'];
-      for(let xi=0; xi<3; xi++){
-        for(let yi=0; yi<3; yi++){
+      for(let xi=0; xi<xZones.length; xi++){
+        for(let yi=0; yi<yZones.length; yi++){
           const level = Math.min(xLevel[xi], yLevel[yi]);
           const x0 = scales.x.getPixelForValue(xZones[xi][0]);
           const x1 = scales.x.getPixelForValue(xZones[xi][1]);
@@ -539,8 +539,8 @@ function render(){
       },
       responsive:true, maintainAspectRatio:false,
       scales:{
-        x:{min:0, max:100, ticks:{color:tc.text, callback:v=>v+'%'}, grid:{color:tc.grid}, title:{display:true, text:'Gestão de Rotina', color:tc.text}},
-        y:{min:0, max:matrixYMax, ticks:{color:tc.text, callback:v=>v+'%'}, grid:{color:tc.grid}, title:{display:true, text:'Resultado', color:tc.text}}
+        x:{min:30, max:100, ticks:{color:tc.text, stepSize:10, callback:v=>v+'%'}, grid:{color:tc.grid}, title:{display:true, text:'Gestão de Rotina', color:tc.text}},
+        y:{min:50, max:matrixYMax, ticks:{color:tc.text, stepSize:10, callback:v=>v+'%'}, grid:{color:tc.grid}, title:{display:true, text:'Resultado', color:tc.text}}
       }
     }
   });
