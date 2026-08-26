@@ -1,0 +1,21 @@
+{
+  "atualizado_em": "26/08/2026 16:42",
+  "ultima_rodada": "3a Avaliação",
+  "total_rodadas": 3,
+  "rodadas": [
+    "1a Avaliação",
+    "2a Avaliação",
+    "3a Avaliação"
+  ],
+  "media_geral": 68.5,
+  "por_area": {
+    "automotiva": 41.3,
+    "apoio_agricola": 68.1,
+    "agricola": 70.4,
+    "industria": 73.0
+  },
+  "mat_industria": 73.0,
+  "mat_agricola": 70.4,
+  "mat_apoio_agricola": 68.1,
+  "mat_automotiva": 41.3
+}
