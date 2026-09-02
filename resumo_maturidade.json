@@ -1,5 +1,5 @@
 {
-  "atualizado_em": "02/09/2026 09:40",
+  "atualizado_em": "02/09/2026 10:41",
   "ultima_rodada": "3a Avaliação",
   "total_rodadas": 3,
   "rodadas": [
@@ -9,8 +9,8 @@
   ],
   "media_geral": 68.5,
   "por_area": {
-    "automotiva": 41.3,
-    "apoio_agricola": 68.1,
+    "automotiva": 47.8,
+    "apoio_agricola": 70.8,
     "agricola": 70.4,
     "industria": 73.0
   },
@@ -22,17 +22,18 @@
     "2a Avaliação": {
       "industria": 70.3,
       "agricola": 70.6,
-      "apoio_agricola": 48.3
+      "apoio_agricola": 49.1,
+      "automotiva": 46.8
     },
     "3a Avaliação": {
-      "automotiva": 41.3,
-      "apoio_agricola": 68.1,
+      "automotiva": 47.8,
+      "apoio_agricola": 70.8,
       "agricola": 70.4,
       "industria": 73.0
     }
   },
   "mat_industria": 73.0,
   "mat_agricola": 70.4,
-  "mat_apoio_agricola": 68.1,
-  "mat_automotiva": 41.3
+  "mat_apoio_agricola": 70.8,
+  "mat_automotiva": 47.8
 }
